@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://pcai042.informatik.uni-leipzig.de/" />
+<title>selenium_email_testen</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">selenium_email_testen</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/~swp11-7/ontowiki/resource/properties/?r=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.net</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.tobias</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.tomtom</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.au</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojo1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.spas</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmxxx.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojo4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmxolo.net</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojo5</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.net</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.==</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwasdfasdfan@gmx.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojojojo</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>mblubax.schwan@gmx.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>@gmx.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwannnnnn@gmx.au</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmmmmx.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max..schwan@gmx.net</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmxxxxxxx.de</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max@schwan@gmx.jojo4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwwwwwwwan@gmxolo.net</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>assertAlert</td>
+	<td>This is a testmail with the link: http://pcai042.informatik.uni-leipzig.de/~swp11-7/ontowiki/invitation/instance?uri=http%3A%2F%2Fod.fmi.uni-leipzig.de%2Fpersonal%2FAckermann_Stefan</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>invitemailinput</td>
+	<td>max.schwan@gmx.jojo555</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>invitesubmit</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

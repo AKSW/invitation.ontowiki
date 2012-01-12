@@ -1,0 +1,89 @@
+<?php
+//Print error if there is one
+    if(isset($this->error)) {
+       echo '<div class="messagebox error">'.$this->error.'</div>';
+    } else {
+
+//Otherwise print content of instance
+        if(isset($this->prePropertiesContent)) {
+           echo '<div>'.$this->prePropertiesContent.'</div>';
+        }
+        $flag = false;
+?>
+    <div class="messagebox success">Because of an invitation your are allowed to read the properties of this instance.</div>
+    <span about="<?php echo $this->resourceUri; ?>" style="display:none" class="about_span"></span>
+<?php
+        if($this->has('predicates')) {
+            $odd = true;
+            $current = 0;
+            echo '<table class="separated-vertical rdfa" about="'.$this->resourceUri.'">';
+            foreach($this->predicates as $graph => $predicatesForGraph) {
+                $current++;
+                if(count($this->predicates[$graph]) > 0) {
+                    $flag = true;
+                    echo '<tbody id="table-group-'.$current.'">';
+                    foreach($predicatesForGraph as $uri => $predicate) {
+                        $currentPredicate = $this->predicates[$graph][$uri];
+?>
+                        <tr>
+                            <td width="120">
+                                <a about="<?php echo $currentPredicate['uri']; ?>"
+                                   href="<?php echo $currentPredicate['url']; ?>">
+                                    <?php echo $currentPredicate['title']; ?>
+                                </a>
+                            </td>
+                            <td>
+                                <div class="has-contextmenu-area">
+                                    <ul class="bullets-none">
+<?php
+                                        foreach($this->values[$graph][$uri] as $entry) {
+                                            if($entry['url']) {
+?>
+                                                <li>
+                                                    <a resource="<?php echo $entry['uri']; ?>"
+                                                       rel="<?php echo $currentPredicate['curi']; ?>"
+                                                       class="expandable"
+                                                       href="<?php echo $entry['url']; ?>">
+                                                        <?php echo $entry['object']; ?>
+                                                    </a>
+                                                </li>
+<?php
+                                            } else {
+?>
+                                                <li property="<?php echo $currentPredicate['curi']; ?>"
+                                                    data-object-hash="<?php echo $entry['object_hash']; ?>"
+                                                    content="<?=($this->escape(isset($entry['content']) ? $entry['content'] : $entry['object']))?>"
+<?php
+                                                    if(isset($entry['lang']) && !empty($entry['lang'])) {
+                                                       echo 'xml:lang="<'.$entry['lang'].'"';
+                                                    }
+                                                    else if(isset($entry['datatype']) && !empty($entry['datatype'])) {
+                                                        echo 'datatype="'.$entry['datatype'].'"';
+                                                    }
+                                                    echo '>';
+                                                    echo $entry['object'];
+                                                echo '</li>';
+                                            }
+                                        }
+                                        if(isset($currentPredicate['has_more']) && $currentPredicate['has_more']) {
+                                            echo '<a href="'.$currentPredicate['has_more_link'].'">['.$this->_('more').']</a>';
+                                        }
+?>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+<?php
+                    }
+                }
+?>
+                </tbody>
+<?php
+            }
+            echo '</table>';
+        }
+        if(!$flag) {
+            echo '<p class="messagebox info">'.$this->_('No predicates found.').'</p>';
+        }
+    }
+?>

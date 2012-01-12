@@ -1,0 +1,34 @@
+<div id="invitmain" class="width99">
+<?php
+    if($this->state == 'okay') {
+?>
+        <img id="inviticondelete" class="hidden" src="<?php echo $this->themeUrlBase.'images/icon-delete.png'; ?>" />
+        <img id="inviticoninfo" class="hidden" src="<?php echo $this->themeUrlBase.'images/icon-info.png'; ?>" />
+        <img id="inviticonerror" class="hidden" src="<?php echo $this->themeUrlBase.'images/icon-error.png'; ?>" />
+
+        <img id="invitloading" src="<?php echo $this->themeUrlBase.'images/spinner.gif'; ?>" />
+        <div id="invitmessages"></div>
+        <label class="display-block" for="invitinput">E-Mail</label>
+        <img id="invitadd" src="<?php echo $this->themeUrlBase.'images/icon-add.png'; ?>" />
+        <input id="invitinput" class="text inner-label" type="text" />
+        <div id="invitmaillist"></div>
+        <a id="invitsubmit" type="button" class="button"><span>Send</span></a>
+<?php
+    }
+    else if($this->state == 'nomail') {
+?>
+        <div id="invitmessage" class="messagebox warning">
+            Unable to send invitation without email-address.
+        </div>
+<?php
+    }
+    else if($this->state == 'noontology') {
+        
+?>
+        <div id="invitwarning" class="messagebox error">
+            Ontology not available.
+        </div>
+<?php
+    }
+?>
+</div>

@@ -1,0 +1,74 @@
+#invitmain {
+    text-align: center;
+}
+
+#invitinput {
+    text-align: left;
+    width: 70%;
+}
+
+#invitsubmit {
+    text-align: center;
+    margin: 5px auto;
+    width: 80%;
+    line-height: 1;
+}
+
+#invitmaillist {
+    overflow: auto;
+}
+
+#invitmain .token {
+    background-color: #DEE8EE;
+    border: 1px solid #AAAAAA;
+    border-radius: 12px 12px 12px 12px;
+    margin: 4px;
+    color: #000;
+    width: auto;
+}
+
+.invitclear {
+    margin: 1px 3px 0px 0px;
+    float: right;
+}
+
+.inviticoninvited, .inviticoninvalid {
+    margin: 1px 0px 0px 3px;
+    float: left;
+    display: none;
+}
+
+#invitadd {
+    float: right;
+}
+
+#invitmaillist .mail {
+    overflow: hidden;
+}
+
+.invitmailinvalid {
+    background-color: #FBB !important;
+    color: #000 !important;
+}
+
+.invitmailerror {
+    background-color: #FBB !important;
+    color: #000 !important;
+}
+
+.invitmailinvited {
+    background-color: #BBF !important;
+    color: #000 !important;
+}
+
+.invitmailinvalid .inviticoninvalid {
+    display: block !important;
+}
+
+.invitmailinvited .inviticoninvited {
+    display: block !important;
+}
+
+.ac_over {
+    background-color: #DEE8EE;
+}
