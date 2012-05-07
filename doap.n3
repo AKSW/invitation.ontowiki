@@ -44,5 +44,4 @@
         a owconfig:Config;
         owconfig:id "smtp";
         :server ""
-  ] ;
-
+    ] .
