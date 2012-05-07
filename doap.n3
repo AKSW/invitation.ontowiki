@@ -12,8 +12,7 @@
     rdfs:label "Invitation" ;
     doap:description "invite colleagues via email to view a resource, eaven if they don\'t have an account" ;
     doap:name "invitation" ;
-    doap:maintainer <http://pcai042.informatik.uni-leipzig.de/~swp11-7> ;
-    owconfig:authorLabel "swp11-7" ;
+    doap:maintainer :swp11-7;
 
     owconfig:enabled "true"^^xsd:boolean ;
     owconfig:privateNamespace <https://raw.github.com/AKSW/invitation.ontowiki/master/doap.n3#> ;
@@ -28,6 +27,10 @@
     doap:created "2012-05-07" ;
     owconfig:minOWVersion "0.9.6" ;
     doap:file-release <https://github.com/AKSW/invitation.ontowiki/zipball/v1.0> .
+
+:swp11-7 a foaf:Group ;
+    foaf:homepage <http://pcai042.informatik.uni-leipzig.de/~swp11-7> ;
+    foaf:name "SWP11-7" .
 
 :InvitationModule a owconfig:Module ;
     rdfs:label "Invitation" ;
