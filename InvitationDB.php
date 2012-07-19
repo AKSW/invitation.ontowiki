@@ -1,8 +1,13 @@
 <?php
+/**
+ * This file is part of the invitation extension for OntoWiki
+ */
 
 /**
  * The InvitationDB-Class represents the interface between the database and the controller.
  * It manages the invitations and checks all constraints
+ *
+ * @package    Extensions_Invitation
  */
 class InvitationDB
 {
