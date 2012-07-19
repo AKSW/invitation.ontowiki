@@ -10,7 +10,7 @@
 
 :invitation a doap:Project ;
     rdfs:label "Invitation" ;
-    doap:description "invite colleagues via email to view a resource, eaven if they don\'t have an account" ;
+    doap:description "invite colleagues via email to view a resource, eaven if they don't have an account" ;
     doap:name "invitation" ;
     doap:maintainer :swp11-7;
 
