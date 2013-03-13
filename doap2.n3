@@ -1,0 +1,48 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owconfig: <http://ns.ontowiki.net/SysOnt/ExtensionConfig/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix event: <http://ns.ontowiki.net/SysOnt/Events/> .
+@prefix : <https://raw.github.com/AKSW/invitation.ontowiki/master/doap.n3#> .
+
+<> foaf:primaryTopic :invitation .
+
+:invitation a doap:Project ;
+    rdfs:label "Invitation" ;
+    doap:description "invite colleagues via email to view a resource, eaven if they don\'t have an account" ;
+    doap:name "invitation" ;
+    doap:maintainer <http://pcai042.informatik.uni-leipzig.de/~swp11-7> ;
+    owconfig:authorLabel "swp11-7" ;
+
+    owconfig:enabled "true"^^xsd:boolean ;
+    owconfig:privateNamespace <https://raw.github.com/AKSW/invitation.ontowiki/master/doap.n3#> ;
+    owconfig:templates "templates" ;
+    owconfig:hasModule :InvitationModule ;
+
+    owconfig:registeredAt <http://extensions.ontowiki.net/repository> ;
+    doap:release :v1 .
+
+:v1 a doap:Version ;
+    doap:revision "1.0" ;
+    doap:created "2012-05-07" ;
+    owconfig:minOWVersion "0.9.6" ;
+    doap:file-release <https://github.com/AKSW/invitation.ontowiki/zipball/v1.0> .
+
+:InvitationModule a owconfig:Module ;
+    rdfs:label "Invitation" ;
+    owconfig:caching "false"^^xsd:boolean ;
+    owconfig:priority "10" ;
+    owconfig:context "main.window.properties" .
+
+:invitation :modeluri "InvitationDB" ;
+    :invitationlimit "10" ;
+    :invitationlimittime "1440" ;
+    :title "OntoWiki - Invitation" ;
+    :sender "invitation@ontowiki.com" ;
+    owconfig:config [
+        a owconfig:Config;
+        owconfig:id "smtp";
+        :server ""
+  ] ;
+
